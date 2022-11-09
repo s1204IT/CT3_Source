@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">BT Tool</string>
+    <string name="app_version" translatable="false">0.9.6</string>
+    <string name="loading">Loading</string>
+
+    <!-- Activity - Setting -->
+    <string name="act_set_prefs_bluetooth">Bluetooth Log Tool</string>
+    <string name="act_set_prefs_systool">MTK System Tool</string>
+
+    <!-- test situation -->
+    <string name="act_set_pref_test_situation_title">Test Situation: %1$s</string>
+    <string name="act_set_pref_test_situation_dialog_title">Test Situation</string>
+    <string-array name="act_set_pref_test_situation_entries_labels">
+        <item>Default</item>
+        <item>SQC</item>
+        <item>Debug</item>
+        <item>Cust</item>
+    </string-array>
+    <string-array name="act_set_pref_test_situation_entries_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="act_set_pref_test_situation_entries_summaries">
+        <item>minimal log output</item>
+        <item>more log but keep up the good performance</item>
+        <item>maximal log with a performance degradation</item>
+        <item>use self-defined log config</item>
+    </string-array>
+
+    <!-- config cust path -->
+    <string name="act_set_pref_btsc_cust_path_title">Stack Cust Config</string>
+    <string name="act_set_pref_btsc_cust_path_summary">%1$s</string>
+    <!--
+    <string name="act_set_pref_btfc_cust_path_title">Firmware Cust Config</string>
+    <string name="act_set_pref_btfc_cust_path_summary">%1$s</string>
+    -->
+
+    <!-- system tool -->
+    <string name="act_set_pref_systool_open_mtklogger_title">Open MtkLogger</string>
+    <string name="act_set_pref_systool_open_mtklogger_summary">go to MtkLogger home screen</string>
+    <string name="act_set_pref_systool_open_engmode_title">Open EngineerMode</string>
+    <string name="act_set_pref_systool_open_engmode_summary" translatable="false">Speech VM: Hardware Testing > Audio > Speech Logger</string>
+
+    <!--
+    <string name="act_set_pref_systool_switch_mtklogger_title">Switch MtkLogger Recording</string>
+    <string name="act_set_pref_systool_switch_mtklogger_summary">cannot guarantee the state of MtkLogger!!</string>
+    <string name="act_set_prefs_storage">Storage</string>
+    <string name="act_set_pref_log_storage_title">Save to</string>
+    <string name="act_set_pref_log_storage_summary">Free: 320Kb</string>
+    <string name="act_set_pref_log_storage_dialog_tilte">Please select...</string>
+    <string-array name="act_set_pref_log_stroage_list_titles">
+        <item>Internal</item>
+        <item>External</item>
+    </string-array>
+    <string name="storage_info">%1$s (%2$s)</string>
+    -->
+
+</resources>

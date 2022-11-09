@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">蓝牙除错工具</string>
+    <string name="loading">忙碌中</string>
+
+    <!-- Activity - Setting -->
+    <string name="act_set_prefs_bluetooth">蓝牙日志工具</string>
+    <string name="act_set_pref_test_situation_title">测试情境: %1$s</string>
+    <string name="act_set_pref_test_situation_dialog_title">测试情境</string>
+    <string-array name="act_set_pref_test_situation_entries_labels">
+        <item>系统默认</item>
+        <item>品管程序</item>
+        <item>特殊除错</item>
+        <item>自定义档</item>
+    </string-array>
+    <string-array name="act_set_pref_test_situation_entries_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="act_set_pref_test_situation_entries_summaries">
+        <item>最少的日志输出量</item>
+        <item>较多的日志输出量且保持良好效能</item>
+        <item>最多的日志输出量并影响效能水平</item>
+        <item>上传并使用自定义配置文件</item>
+    </string-array>
+    <string name="act_set_pref_btsc_cust_path_title">Stack 自定义档</string>
+    <string name="act_set_pref_systool_open_engmode_title">开启 EngineerMode</string>
+    <string name="act_set_pref_systool_open_mtklogger_summary">进入 MtkLogger 主画面</string>
+    <string name="act_set_pref_systool_open_mtklogger_title">开启 MtkLogger</string>
+    <string name="act_set_prefs_systool">MTK 系统工具</string>
+
+</resources>
+

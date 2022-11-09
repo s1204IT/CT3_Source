@@ -1,0 +1,95 @@
+#
+# Touchscreen driver configuration
+#
+menuconfig INPUT_TOUCHSCREEN
+	bool "Touchscreens"
+	help
+	  Say Y here, and a list of supported touchscreens will be displayed.
+	  This option doesn't affect the kernel.
+
+	  If unsure, say Y.
+
+if INPUT_TOUCHSCREEN
+
+config TOUCHSCREEN_MTK
+	bool "MediaTek Touch Panel Driver"
+	help
+	  Say Y here if you have MediaTek touch panel.
+
+	  If unsure, say N.
+
+	  To compile this dirver as a module, choose M here: the
+	  module will be called.
+
+config TOUCHSCREEN_MTK_GT1151
+	bool "GT1151 for Mediatek package"
+	default n
+	help
+	  Say Y here if you have GT1151 touch panel.
+
+	  If unsure, say N.
+
+	  To compile this dirver as a module, choose M here: the
+	  module will be called.
+
+source "drivers/input/touchscreen/mediatek/GT1151/Kconfig"
+
+config TOUCHSCREEN_MTK_GT911
+	bool "GT911 for Mediatek package"
+	help
+	  Say Y here if you have GT911 touch panel.
+
+	  If unsure, say N.
+
+source "drivers/input/touchscreen/mediatek/GT911/Kconfig"
+
+config TOUCHSCREEN_FT5X26
+	bool "FT5X26 for Mediatek package"
+	default n
+	help
+	  Say Y here if you have FT5X26 touch panel.
+
+	  If unsure, say N.
+
+	  To compile this dirver as a module, choose M here: the
+	  module will be called.
+
+source "drivers/input/touchscreen/mediatek/FT5X26/Kconfig"
+
+config TOUCHSCREEN_MTK_GSLX680
+	bool "gslX680 for Mediatek package"
+	help
+	  Say Y here if you have gslX680 touch panel.
+
+	  If unsure, say N.
+
+
+config TOUCHSCREEN_MTK_BU21025
+	tristate "BU21025 based touchscreens"
+	depends on I2C
+	help
+	  Say Y here if you have a BU21025 based touchscreen
+	  controller.
+
+	  If unsure, say N.
+
+	  To compile this driver as a module, choose M here: the
+	  module will be called bu21025_ts.
+
+config TOUCHSCREEN_MTK_EKTF2K
+	tristate "EKTF2K Touchscreen"
+	help
+	  Say Y here if you have EKTF2K touchscreen,
+	  connected to your system.
+	  If unsure, say N.
+	  To compile this driver as a module, choose M here.
+
+config TOUCHSCREEN_MTK_WACOM
+	tristate "WACOM Touchscreen"
+	help
+	  Say Y here if you have WACOM touchscreen,
+	  connected to your system.
+	  If unsure, say N.
+	  To compile this driver as a module, choose M here.
+
+endif

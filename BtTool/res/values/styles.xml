@@ -1,0 +1,21 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!-- com.nononsenseapps.filepicker.FilePickerActivity 需要 NoActionBar 的 Theme -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+    </style>
+
+    <!-- You can also inherit from NNF_BaseTheme.Light
+    <style name="FilePickerTheme" parent="NNF_BaseTheme">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="alertDialogTheme">@style/FilePickerAlertDialogTheme</item>
+    </style>
+    <style name="FilePickerAlertDialogTheme" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+    </style>
+    -->
+</resources>

@@ -1,0 +1,9 @@
+#
+# Touchscreen driver configuration
+#
+if TOUCHSCREEN_MTK_EKTF2K
+
+config EKTF2K_CONFIG
+	string "EKTF2K for Mediatek config"
+
+endif

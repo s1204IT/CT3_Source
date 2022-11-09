@@ -1,0 +1,9 @@
+#
+# Touchscreen driver configuration
+#
+if TOUCHSCREEN_MTK_WACOM
+
+config WACOM_CONFIG
+	string "wacom for Mediatek config"
+
+endif

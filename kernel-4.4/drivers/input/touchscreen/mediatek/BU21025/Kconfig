@@ -1,0 +1,9 @@
+#
+# Touchscreen driver configuration
+#
+if TOUCHSCREEN_MTK_BU21025
+
+config BU21025_CONFIG
+	string "BU21025 for Mediatek config"
+	
+endif

@@ -1,0 +1,23 @@
+Android Package 'BtTool.apk' is an Android APK used to configure BT related logs of tool
+on MediaTek's platforms.
+This Android Package is pre-built by MediaTek internal.
+
+WHAT IT DOES?
+=============
+The Android Package 'BtTool.apk' used to configure BT related logs
+for tester to do different log level related testing.
+
+HOW IT WAS BUILT?
+==================
+This module can be build command:
+'mmm -j vendor/mediatek/proprietary/packages/apps/BtTool'.
+
+HOW TO USE IT?
+==============
+The Android Package 'BtTool.apk' can be launched by MtkLogger of Setting 'Open Bluetooth log Tool'.
+or use ADB command:
+"adb shell am start -n com.mediatek.bluetooth.dtt/.MainActivity".
+
+Source
+==============
+All the source code of this Android Package were written by MediaTek co..

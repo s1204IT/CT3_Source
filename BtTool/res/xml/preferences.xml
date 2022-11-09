@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/act_set_prefs_bluetooth">
+        <ListPreference
+                android:key="pref_test_situation"
+                android:title="@string/act_set_pref_test_situation_title"
+                android:dialogTitle="@string/act_set_pref_test_situation_dialog_title"
+                android:defaultValue="1"
+                android:entries="@array/act_set_pref_test_situation_entries_labels"
+                android:entryValues="@array/act_set_pref_test_situation_entries_values"
+                android:negativeButtonText="@null"
+                android:positiveButtonText="@null"
+        />
+        <Preference
+                android:key="pref_btsc_cust_path"
+                android:title="@string/act_set_pref_btsc_cust_path_title"
+        />
+        <!-- 與 btsc 整併
+        <Preference
+                android:key="pref_btfc_cust_path"
+                android:title="@string/act_set_pref_btfc_cust_path_title"
+        />
+        -->
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/act_set_prefs_systool">
+        <!-- remove to prevent confuse user
+        <SwitchPreference android:key="pref_systool_switch_mtklogger"
+              android:title="@string/act_set_pref_systool_switch_mtklogger_title"
+              android:summary="@string/act_set_pref_systool_switch_mtklogger_summary"
+              android:persistent="false"
+        />
+        -->
+        <PreferenceScreen android:key="pref_systool_open_mtklogger"
+              android:title="@string/act_set_pref_systool_open_mtklogger_title"
+              android:summary="@string/act_set_pref_systool_open_mtklogger_summary"
+        />
+        <PreferenceScreen android:key="pref_systool_open_engmode"
+              android:title="@string/act_set_pref_systool_open_engmode_title"
+              android:summary="@string/act_set_pref_systool_open_engmode_summary"
+        />
+    </PreferenceCategory>
+    <!--
+    <PreferenceCategory android:title="@string/act_set_prefs_storage">
+        <ListPreference
+            android:key="pref_log_storage_path"
+            android:title="@string/act_set_pref_log_storage_title"
+            android:summary="@string/act_set_pref_log_storage_summary"
+            android:dialogTitle="@string/act_set_pref_log_storage_dialog_tilte"
+            android:entries="@array/act_set_pref_log_stroage_list_titles"
+            android:entryValues="@array/act_set_pref_log_stroage_list_titles"
+        />
+    </PreferenceCategory>
+    -->
+</PreferenceScreen>
